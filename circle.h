@@ -1,17 +1,18 @@
+#pragma once
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
-#include <math.h>
-//#include "circle.h"
+
+
 
 using namespace cv;
 using namespace std;
 
 void circle()
 {
-	Mat srcImage = imread("4.png");
+	Mat srcImage = imread("第三题图.png");
 	Mat midImage;//临时变量定义
 
 	cvtColor(srcImage, midImage, COLOR_BGR2GRAY);//转化为灰度图
@@ -45,4 +46,3 @@ void circle()
 	waitKey(0);
 
 }
-
